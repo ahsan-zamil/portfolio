@@ -5,3 +5,6 @@
 *{
   font-family: Outfit;
 }
+
+/* Import mobile-specific fixes */
+@import 'mobile-fixes.css';
