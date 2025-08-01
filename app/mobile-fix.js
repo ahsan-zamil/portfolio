@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
         p.style.wordWrap = 'break-word';
         p.style.overflowWrap = 'break-word';
       });
+      
+      // Fix navbar and header spacing issue
+      const headerContainer = document.querySelector('.h-screen');
+      if (headerContainer) {
+        headerContainer.style.paddingTop = '70px';
+      }
     }
   }
 
