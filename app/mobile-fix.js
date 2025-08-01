@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Fix navbar and header spacing issue
       const headerContainer = document.querySelector('.h-screen');
       if (headerContainer) {
-        headerContainer.style.paddingTop = '70px';
+        headerContainer.style.paddingTop = '100px';
       }
     }
   }

@@ -43,18 +43,25 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className='font-Ovo' href="#contact">Contact me</a></li>
         </ul>
 
-        <div className='flex items-center gap-4'>
-
-            <button onClick={()=> setIsDarkMode(prev => !prev)} className="bg-white/80 dark:bg-darkHover/80 p-2 rounded-full">
+        {/* Mobile-only controls positioned in top-right corner */}
+        <div className='md:hidden fixed top-3 right-5 flex flex-col gap-4 z-50'>
+            <button onClick={()=> setIsDarkMode(prev => !prev)}>
+                <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
+            </button>
+            
+            <button onClick={openMenu}>
+                <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-6' />
+            </button>
+        </div>
+        
+        {/* Desktop controls */}
+        <div className='hidden md:flex items-center gap-4'>
+            <button onClick={()=> setIsDarkMode(prev => !prev)}>
                 <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-5' />
             </button>
 
             <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>Contact 
             <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="" className='w-3'/></a>
-
-            <button className='block md:hidden ml-3 bg-white/80 dark:bg-darkHover/80 p-2 rounded-full' onClick={openMenu}>
-            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-5' />
-            </button>
         </div>
 
         {/* -- ----- mobile menu ------  -- */}
