@@ -29,14 +29,14 @@ const Work = ({isDarkMode}) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      className='text-center mx-auto mt-5 mb-12 font-Ovo px-2' style={{maxWidth: '100%', overflowWrap: 'break-word', wordWrap: 'break-word'}}>
       Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</motion.p>
 
     <motion.div
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.9, duration: 0.6 }}
-    className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
+    className='grid grid-cols-1 sm:grid-cols-auto my-10 gap-5 dark:text-black'>
         {workData.map((project, index)=>(
             <motion.div
             whileHover={{ scale: 1.05 }}

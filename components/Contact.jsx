@@ -57,15 +57,15 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      className='text-center mx-auto mt-5 mb-12 font-Ovo px-2' style={{maxWidth: '100%', overflowWrap: 'break-word', wordWrap: 'break-word'}}>
       I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
 
       <motion.form
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.9, duration: 0.5 }}
-      onSubmit={onSubmit} className='max-w-2xl mx-auto'>
-        <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+      onSubmit={onSubmit} className='w-full max-w-2xl mx-auto px-2'>
+        <div className='grid grid-cols-1 sm:grid-cols-auto gap-6 mt-10 mb-8'>
 
             <motion.input
             initial={{ x: -50, opacity: 0 }}

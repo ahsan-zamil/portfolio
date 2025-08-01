@@ -29,14 +29,14 @@ const Services = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
-      className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+      className='text-center mx-auto mt-5 mb-12 font-Ovo px-2' style={{maxWidth: '100%', overflowWrap: 'break-word', wordWrap: 'break-word'}}>
         I'm a Java backend developer from Bhubaneswar, India, specializing in scalable microservices, REST APIs, and distributed systems using Spring Boot. I build robust backend architectures with tools like Kafka, Docker, Kubernetes, and RabbitMQ.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className='grid grid-cols-auto gap-6 my-10'>
+        className='grid grid-cols-1 sm:grid-cols-auto gap-4 sm:gap-6 my-10'>
             {serviceData.map(({icon, title, description, link}, index)=>(
                 <motion.div 
                 whileHover={{scale: 1.05}}

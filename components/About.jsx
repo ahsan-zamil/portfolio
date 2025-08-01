@@ -41,10 +41,10 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1 px-2'>
-                <p className='mb-8 max-w-2xl font-Ovo text-left pr-2'>
+                <p className='mb-8 font-Ovo text-left' style={{maxWidth: '100%', overflowWrap: 'break-word', wordWrap: 'break-word'}}>
                 I am a passionate and self-driven Java Backend Developer currently pursuing a B.Tech in Computer Science and Engineering. I specialize in building scalable, maintainable backend systems using Java, Spring Boot, and microservices architecture. I've developed several real-world projects involving technologies like Kafka, Redis, Docker, PostgreSQL, and REST APIs, with a strong focus on clean code, modular design, and system performance.
                 </p>
-                <p className='mb-8 max-w-2xl font-Ovo text-left pr-2'>
+                <p className='mb-8 font-Ovo text-left' style={{maxWidth: '100%', overflowWrap: 'break-word', wordWrap: 'break-word'}}>
                 Alongside backend development, I have solved 600+ problems on LeetCode, which has sharpened my Data Structures and Algorithms (DSA) skills and strengthened my understanding of core computer science fundamentals, including OOP, OS, DBMS, and networking. I enjoy tackling engineering challenges, learning new tools and technologies, and contributing to impactful software solutions. I am currently seeking internship or full-time SDE opportunities where I can apply my skills, learn from experienced engineers, and grow as a developer.
                 </p>
 
